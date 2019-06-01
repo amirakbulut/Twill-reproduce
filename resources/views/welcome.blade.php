@@ -13,8 +13,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="section-title col-md-5">
-					<h3>Featured</h3>
-					<h2>Properties</h2>
+					<h3>{{ __('index.properties.title_small') }}</h3>
+					<h2>{{ __('index.properties.title') }}</h2>
 				</div>
 			</div>
 			<div class="row portfolio-items">
@@ -22,18 +22,16 @@
 					<div class="project-single">
 						<div class="project-inner project-head">
 							<div class="project-bottom">
-								<h4><a href="properties-details.html">View Property</a><span class="category">Real Estate</span></h4>
+								<h4><a href="properties-details.html">{{ __('index.properties.view_property') }}</a></h4>
 							</div>
 							<div class="button-effect">
 								<a href="properties-details.html" class="btn"><i class="fa fa-link"></i></a>
-								<a href="https://www.youtube.com/watch?v=2xHQqYRcrx4" class="btn popup-video popup-youtube"><i class="fas fa-video"></i></a>
 								<a class="img-poppu btn" href="{{ asset('findhouses/images/feature-properties/fp-1.jpg') }}" data-rel="lightcase:myCollection:slideshow"><i class="fa fa-photo"></i></a>
 							</div>
 							<div class="homes">
 								<!-- homes img -->
 								<a href="properties-details.html" class="homes-img">
-									<div class="homes-tag button alt featured">Featured</div>
-									<div class="homes-tag button alt sale">For Sale</div>
+									<div class="homes-tag button alt sale">{{ __('index.properties.sale') }}</div>
 									<div class="homes-price">Family Home</div>
 									<img src="{{ asset('findhouses/images/feature-properties/fp-1.jpg') }}" alt="home-1" class="img-responsive">
 								</a>
@@ -52,19 +50,19 @@
 							<ul class="homes-list clearfix">
 								<li>
 									<i class="fa fa-bed" aria-hidden="true"></i>
-									<span>6 Bedrooms</span>
+									<span>6 {{ __('index.properties.bedrooms') }}</span>
 								</li>
 								<li>
 									<i class="fa fa-bath" aria-hidden="true"></i>
-									<span>3 Bathrooms</span>
+									<span>3 {{ __('index.properties.bathrooms') }}</span>
 								</li>
 								<li>
 									<i class="fa fa-object-group" aria-hidden="true"></i>
-									<span>720 sq ft</span>
+									<span>720 m2</span>
 								</li>
 								<li>
 									<i class="fas fa-warehouse" aria-hidden="true"></i>
-									<span>2 Garages</span>
+									<span>2 {{ __('index.properties.garages') }}</span>
 								</li>
 							</ul>
 							<!-- Price -->
@@ -72,25 +70,6 @@
 								<h3 class="title mt-3">
                                 <a href="properties-details.html">$ 230,000</a>
                                 </h3>
-								<div class="compare">
-									<a href="#" title="Compare">
-										<i class="fas fa-exchange-alt"></i>
-									</a>
-									<a href="#" title="Share">
-										<i class="fas fa-share-alt"></i>
-									</a>
-									<a href="#" title="Favorites">
-										<i class="fa fa-heart-o"></i>
-									</a>
-								</div>
-							</div>
-							<div class="footer">
-								<a href="agent-details.html">
-									<i class="fa fa-user"></i> Jhon Doe
-								</a>
-								<span>
-                                <i class="fa fa-calendar"></i> 2 months ago
-                            </span>
 							</div>
 						</div>
 					</div>

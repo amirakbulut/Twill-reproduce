@@ -22,6 +22,11 @@ return [
                 'title' => 'Diensten overzicht',
                 'icon' => 'text',
                 'component' => 'a17-block-services',
+            ],
+            'properties' => [
+                'title' => 'Vastgoed overzicht (not working)',
+                'icon' => 'text',
+                'component' => 'a17-block-properties',
             ]
         ],
         'repeaters' => [
@@ -34,6 +39,7 @@ return [
         ],
         'browser_route_prefixes' => [
             'services' => 'content',
+            'properties' => 'content',
         ],
     ]
 ];

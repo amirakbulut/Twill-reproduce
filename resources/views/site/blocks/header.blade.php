@@ -16,38 +16,40 @@
 								<form class="form">
 									<!-- Form Location -->
 									<div class="form-group location">
-										<div class="nice-select form-control wide" tabindex="0"><span class="current"><i class="fa fa-map-marker"></i>Locatie</span>
+										<div class="nice-select form-control wide" tabindex="0"><span class="current"><i class="fa fa-map-marker"></i>{{ __('index.header.location') }}</span>
 											<ul class="list">
-												<li data-value="1" class="option selected ">Nederland</li>
-												<li data-value="2" class="option">Turkije</li>
+												<li data-value="1" class="option selected ">{{ __('index.coutries.nl') }}</li>
+												<li data-value="2" class="option">{{ __('index.coutries.tr') }}</li>
 											</ul>
 										</div>
 									</div>
 									<!--/ End Form Location -->
 									<!-- Form Property Type -->
 									<div class="form-group">
-										<div class="nice-select form-control wide" tabindex="0"><span class="current"><i class="fa fa-home"></i>Vastgoed type</span>
+										<div class="nice-select form-control wide" tabindex="0"><span class="current"><i class="fa fa-home"></i>{{ __('index.header.property_type.title') }}</span>
 											<ul class="list">
-												<li data-value="1" class="option selected ">Family House</li>
-												<li data-value="2" class="option">Apartment</li>
-												<li data-value="3" class="option">Condo</li>
+												<li data-value="1" class="option selected ">{{ __('index.header.property_type.submenu.item1') }}</li>
+												<li data-value="2" class="option">{{ __('index.header.property_type.submenu.item2') }}</li>
+												<li data-value="3" class="option">{{ __('index.header.property_type.submenu.item3') }}</li>
+												<li data-value="3" class="option">{{ __('index.header.property_type.submenu.item4') }}</li>
+												<li data-value="3" class="option">{{ __('index.header.property_type.submenu.item5') }}</li>
 											</ul>
 										</div>
 									</div>
 									<!--/ End Form Property Type -->
 									<!-- Form Property Status -->
 									<div class="form-group duration">
-										<div class="nice-select form-control wide" tabindex="0"><span class="current"><i class="fa fa-home"></i>Vastgoed status</span>
+										<div class="nice-select form-control wide" tabindex="0"><span class="current"><i class="fa fa-home"></i>{{ __('index.header.property_status.title') }}</span>
 											<ul class="list">
-												<li data-value="1" class="option selected ">For Sale</li>
-												<li data-value="2" class="option">For Rent</li>
+												<li data-value="1" class="option selected ">{{ __('index.header.property_status.submenu.item1') }}</li>
+												<li data-value="2" class="option">{{ __('index.header.property_status.submenu.item2') }}</li>
 											</ul>
 										</div>
 									</div>
 									<!--/ End Form Property Status -->
 									<!-- Form Bedrooms -->
 									<div class="form-group">
-										<div class="nice-select form-control wide" tabindex="0"><span class="current"><i class="fa fa-bed" aria-hidden="true"></i>Slaapkamers</span>
+										<div class="nice-select form-control wide" tabindex="0"><span class="current"><i class="fa fa-bed" aria-hidden="true"></i>{{ __('index.header.bedrooms') }}</span>
 											<ul class="list">
 												<li data-value="1" class="option selected">1</li>
 												<li data-value="2" class="option">2</li>
@@ -65,7 +67,7 @@
 									<!--/ End Form Bedrooms -->
 									<!-- Form Bathrooms -->
 									<div class="form-group">
-										<div class="nice-select form-control wide" tabindex="0"><span class="current"><i class="fa fa-bath" aria-hidden="true"></i>Badkamers</span>
+										<div class="nice-select form-control wide" tabindex="0"><span class="current"><i class="fa fa-bath" aria-hidden="true"></i>{{ __('index.header.bathrooms') }}</span>
 											<ul class="list">
 												<li data-value="1" class="option selected">1</li>
 												<li data-value="2" class="option">2</li>
@@ -83,7 +85,7 @@
 									<!--/ End Form Bathrooms -->
 									<!-- Form Button -->
 									<div class="form-group button">
-										<button type="submit" class="btn">Zoeken</button>
+										<button type="submit" class="btn">{{ __('index.header.search') }}</button>
 									</div>
 									<!--/ End Form Button -->
 								</form>

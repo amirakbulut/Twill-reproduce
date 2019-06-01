@@ -39,13 +39,13 @@
 			<div class="container">
 				<div class="top-info hidden-sm-down">
 					<div class="call-header">
-						<p><i class="fa fa-phone" aria-hidden="true"></i> (234) 0200 17813</p>
+						<p><i class="fa fa-phone" aria-hidden="true"></i> {{ __('global.info_header.telephone') }}</p>
 					</div>
 					<div class="address-header">
-						<p><i class="fa fa-map-marker" aria-hidden="true"></i> 95 South Park Ave, USA</p>
+						<p><i class="fa fa-map-marker" aria-hidden="true"></i> {{ __('global.info_header.address') }}</p>
 					</div>
 					<div class="mail-header">
-						<p><i class="fa fa-envelope" aria-hidden="true"></i> info@findhouses.com</p>
+						<p><i class="fa fa-envelope" aria-hidden="true"></i> {{ __('global.info_header.email') }}</p>
 					</div>
 				</div>
 				<div class="top-social hidden-sm-down">
@@ -83,38 +83,38 @@
 
 				<form action="#" id="bloq-search" class="collapse">
 					<div class="bloq-search">
-						<input type="text" placeholder="search...">
-						<input type="submit" value="Search">
+						<input type="text" placeholder="{{ __('global.menu.search.placeholder') }}">
+						<input type="submit" value="{{ __('global.menu.search.button') }}">
 					</div>
 				</form>
 
 				<nav id="main-menu" class="collapse">
 					<ul>
-                        <li><a href="/">Home</a></li>
+                        <li><a href="/">{{ __('global.menu.link1') }}</a></li>
 						<!-- STAR COLLAPSE MOBILE MENU -->
 						<li class="hidden-lg-up">
 							<div class="po">
-								<a data-toggle="collapse" href="#listing" aria-expanded="false">Vastgoed</a>
+								<a data-toggle="collapse" href="#listing" aria-expanded="false">{{ __('global.menu.link2.title') }}</a>
 							</div>
 							<div class="collapse" id="listing">
 								<div class="card card-block">
-									<a class="dropdown-item" href="#">Nederland</a>
-									<a class="dropdown-item" href="#">Turkije</a>
+									<a class="dropdown-item" href="#">{{ __('global.coutries.nl') }}</a>
+									<a class="dropdown-item" href="#">{{ __('global.coutries.tr') }}</a>
 								</div>
 							</div>
 						</li>
 						<!-- END COLLAPSE MOBILE MENU -->
 						<li class="dropdown hidden-md-down">
-							<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Vastgoed</a>
+							<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">{{ __('global.menu.link2.title') }}</a>
 							<div class="dropdown-menu">
-								<a class="dropdown-item" href="#">Nederland</a>
-								<a class="dropdown-item" href="#">Turkije</a>
+								<a class="dropdown-item" href="#">{{ __('global.menu.link2.submenu.link1') }}</a>
+								<a class="dropdown-item" href="#">{{ __('global.menu.link2.submenu.link2') }}</a>
 							</div>
 						</li>
 						<!-- STAR COLLAPSE MOBILE MENU -->
 						<li class="hidden-lg-up">
 							<div class="po">
-								<a data-toggle="collapse" href="#services" aria-expanded="false">Agents</a>
+								<a data-toggle="collapse" href="#services" aria-expanded="false">{{ __('global.menu.link3') }}</a>
 							</div>
 							<div class="collapse" id="services">
 								<div class="card card-block">
@@ -126,7 +126,7 @@
 						</li>
 						<!-- END COLLAPSE MOBILE MENU -->
 						<li class="dropdown hidden-md-down">
-							<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Agents</a>
+							<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">{{ __('global.menu.link3') }}</a>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="agents-listing-grid.html">Agents Listing Grid</a>
 								<a class="dropdown-item" href="agents-listing-row.html">Agents Listing Row</a>
@@ -136,7 +136,7 @@
 						<!-- STAR COLLAPSE MOBILE MENU -->
 						<li class="hidden-lg-up">
 							<div class="po">
-								<a data-toggle="collapse" href="#about" aria-expanded="false">Pages</a>
+								<a data-toggle="collapse" href="#about" aria-expanded="false">{{ __('global.menu.link4') }}</a>
 							</div>
 							<div class="collapse" id="about">
 								<div class="card card-block">
@@ -153,7 +153,7 @@
 						</li>
 						<!-- END COLLAPSE MOBILE MENU -->
 						<li class="dropdown hidden-md-down">
-							<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Pages</a>
+							<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">{{ __('global.menu.link4') }}</a>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="about.html">About Us</a>
 								<a class="dropdown-item" href="faq.html">Faq</a>
@@ -168,7 +168,7 @@
 						<!-- STAR COLLAPSE MOBILE MENU -->
 						<li class="hidden-lg-up">
 							<div class="po">
-								<a data-toggle="collapse" href="#blog" aria-expanded="false">Blog</a>
+								<a data-toggle="collapse" href="#blog" aria-expanded="false">{{ __('global.menu.link5') }}</a>
 							</div>
 							<div class="collapse" id="blog">
 								<div class="card card-block">
@@ -180,14 +180,14 @@
 						</li>
 						<!-- END COLLAPSE MOBILE MENU -->
 						<li class="dropdown hidden-md-down">
-							<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Blog</a>
+							<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">{{ __('global.menu.link5') }}</a>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="blog.html">Blog Default</a>
 								<a class="dropdown-item" href="blog-rightsidebar.html">Blog Right Sidebar</a>
 								<a class="dropdown-item" href="blog-details.html">Blog Details</a>
 							</div>
 						</li>
-						<li><a href="contact-us.html">Contact</a></li>
+						<li><a href="contact-us.html">{{ __('global.menu.link6') }}</a></li>
 					</ul>
 				</nav>
 			</div>

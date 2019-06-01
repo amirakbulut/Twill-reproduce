@@ -1707,12 +1707,12 @@ section.portfolio {
   z-index: 99; }
 
 .portfolio .homes-tag.sale {
-  background: #e54242 !important;
+  background: #39b54a !important;
   width: 84px !important;
   height: 31px; }
 
 .portfolio .homes-tag.sale {
-  right: 15px;
+  left: 15px;
   margin-top: 15px;
   top: 0; }
 

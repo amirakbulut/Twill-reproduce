@@ -13,10 +13,6 @@ class Page extends Model
 {
     use HasBlocks, HasMedias, hasTranslation, hasSlug;
 
-    protected $indexOptions = [
-        'permalink' => true
-    ];
-    
     protected $fillable = [
         'published',
         'title',

@@ -14,6 +14,10 @@
 use App\Models\Page;
 use App\Models\Service;
 
+Route::get('home', function () {
+    return redirect('/');
+});
+
 Route::get('/', function () {
     $page = Page::first();
     $services = Service::all();
