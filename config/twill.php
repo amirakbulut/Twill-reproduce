@@ -25,9 +25,10 @@ return [
             ]
         ],
         'browser_route_prefixes' => [
-            'services' => 'content',
-            'properties' => 'content',
-            'propertyTypes' => 'content',
+            'services' => 'browser',
+            'properties' => 'browser',
+            'propertyTypes' => 'browser',
+            'cities' => 'browser',
         ],
     ]
 ];

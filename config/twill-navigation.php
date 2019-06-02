@@ -11,15 +11,15 @@ return [
             ],
             'propertyTypes' => [
                 'title' => 'Vastgoed types',
-                'route' => 'admin.content.propertyTypes.index',
+                'route' => 'admin.browser.propertyTypes.index',
             ],
             'countries' => [
                 'title' => 'Landen',
-                'route' => 'admin.content.countries.index',
+                'route' => 'admin.browser.countries.index',
             ],
             'cities' => [
                 'title' => 'Steden',
-                'route' => 'admin.content.cities.index',
+                'route' => 'admin.browser.cities.index',
             ]
             
         ],

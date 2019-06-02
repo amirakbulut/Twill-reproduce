@@ -1,8 +1,7 @@
 @formField('browser', [
-    'routePrefix' => 'content',
+    'routePrefix' => 'browser',
     'moduleName' => 'properties',
     'name' => 'properties',
     'label' => 'Vastgoed overzicht',
-    'max' => 6,
-    'translated' => true
+    'max' => 6
 ])

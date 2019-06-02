@@ -16,7 +16,7 @@ class Property extends Model
         'title',
         'description',
         'adres',
-        'country',
+        // 'country',
         'property_type',
         'bedrooms',
         'bathrooms',
@@ -24,7 +24,8 @@ class Property extends Model
         'garages',
         'sales_type',
         'discount',
-        'price'
+        'price',
+        // 'country_id'
         // 'position',
         // 'public',
         // 'featured',
@@ -74,5 +75,10 @@ class Property extends Model
     public function propertyTypes()
     {
         return $this->belongsToMany(\App\Models\PropertyType::class);
+    }
+
+    public function cities()
+    {
+        return $this->belongsToMany(\App\Models\City::class);
     }
 }

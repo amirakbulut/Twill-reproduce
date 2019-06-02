@@ -1,5 +1,5 @@
 @formField('browser', [
-    'routePrefix' => 'content',
+    'routePrefix' => 'browser',
     'moduleName' => 'services',
     'name' => 'services',
     'label' => 'Diensten',

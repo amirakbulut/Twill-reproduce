@@ -19,7 +19,9 @@ class PropertyRepository extends ModuleRepository
 
     public function afterSave($object, $fields)
     {
+        
         $this->updateBrowser($object, $fields, 'propertyTypes');
+        $this->updateBrowser($object, $fields, 'cities');
         parent::afterSave($object, $fields);
     }
 
@@ -27,6 +29,7 @@ class PropertyRepository extends ModuleRepository
     {
         $fields = parent::getFormFields($object);
         $fields['browsers']['propertyTypes'] = $this->getFormFieldsForBrowser($object, 'propertyTypes');
+        $fields['browsers']['cities'] = $this->getFormFieldsForBrowser($object, 'cities');
         return $fields;
     }
 }

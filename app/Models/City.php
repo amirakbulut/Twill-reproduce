@@ -58,4 +58,14 @@ class City extends Model
     //         ],
     //     ],
     // ];
+
+    public function properties()
+    {
+        return $this->hasMany(\App\Models\Property::class);
+    }
+
+    public function country()
+    {
+        return $this->belongsToMany(\App\Models\Country::class);
+    }
 }

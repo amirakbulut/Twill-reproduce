@@ -21,7 +21,6 @@ class CreatePropertiesTables extends Migration
             // custom fields
 
             $table->text('adres')->nullable();
-            $table->integer('country')->nullable();
             $table->integer('property_type')->nullable();
             $table->integer('bedrooms')->nullable();
             $table->integer('bathrooms')->nullable();

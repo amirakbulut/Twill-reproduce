@@ -1,12 +1,12 @@
 @extends('twill::layouts.form')
 
 @section('contentFields')
-    @formField('input', [
+    <!-- @formField('input', [
         'name' => 'description',
         'label' => 'Description',
         'translated' => true,
         'maxlength' => 100
-    ])
+    ]) -->
     @formField('browser', [
         'moduleName' => 'cities',
         'name' => 'cities',

@@ -40,14 +40,16 @@ Route::get('/', function () {
 
 Route::get('{locale}/{slug}', function ($locale, $slug) {
     App::setLocale($locale);
-    $page = Page::forSlug($slug)->firstOrFail();
+    $page = Page::forSlug($slug)->where('published', 1)->firstOrFail();
     return view('welcome')->with(['page' => $page]);
     
 });
 
 Route::get('test', function () {
-    App::setLocale('tr');
+    App::setLocale('en');
     $property = Property::first();
-    echo $property->propertyTypes[0]->translate(app()->getLocale())->title;
+    // echo $property->propertyTypes[0]->translate(app()->getLocale())->title;
+    // echo json_encode($property->cities[0]->translate(app()->getLocale())->title);
+    // echo json_encode($property->cities[0]->country[0]->title);
 
 });

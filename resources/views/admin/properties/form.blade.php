@@ -10,34 +10,27 @@
         'name' => 'description',
         'label' => 'Description',
         'translated' => true,
-        'maxlength' => 1000,
+        'maxlength' => 3000,
     ])
     @formField('input', [
         'name' => 'adres',
         'label' => 'Locatie/Adres',
         'required' => true
     ])
-    @formField('select', [
-        'name' => 'country',
-        'label' => 'Land',
-        'placeholder' => 'Selecteer een land',
-        'required' => true,
-        'options' => [
-                [
-                    'value' => 1,
-                    'label' => 'Nederland'
-                ],
-                [
-                    'value' => 2,
-                    'label' => 'Turkije'
-                ]
-            ]
-        ]
-    )
+    </br>
+    <a17-fieldset title="Locatie" id="related" :open="true">
+        @formField('browser', [
+            'routePrefix' => 'browser',
+            'moduleName' => 'cities',
+            'name' => 'cities',
+            'label' => 'Steden',
+            'max' => 1
+        ])
+    </a17-fieldset>
     </br>
     <a17-fieldset title="Vastgoed type" id="related" :open="true">
         @formField('browser', [
-            'routePrefix' => 'content',
+            'routePrefix' => 'browser',
             'moduleName' => 'propertyTypes',
             'name' => 'propertyTypes',
             'label' => 'Vastgoed type',
