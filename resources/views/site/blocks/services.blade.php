@@ -2,8 +2,8 @@
 	<section class="services-home bg-white">
 		<div class="container">
 			<div class="section-title">
-				<h3>Property</h3>
-                <h2>Services</h2>
+				<h3>{{ __('index.services.subtitle') }}</h3>
+                <h2>{{ __('index.services.title') }}</h2>
 			</div>
 			<div class="row">
                 @php
@@ -20,7 +20,7 @@
                             <div class="agent-section p-top-35 p-bottom-30 p-right-25 p-left-25">
                                 <h4 class="m-bottom-15 text-bold-700">{{ $service->title }}</h4>
                                 <p>{{ $service->description }}</p>
-                                <a class="text-base text-base-dark-hover text-size-13" href="properties-full-list.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                <a class="text-base text-base-dark-hover text-size-13" href="properties-full-list.html">{{ __('index.services.readmore') }} <i class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>

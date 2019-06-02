@@ -2,11 +2,13 @@
 
 @section('contentFields')
     @formField('input', [
-        'type' => 'textarea',
         'name' => 'description',
-        'label' => 'SEO Pagina beschrijving',
-        'rows' => 4
+        'label' => 'Description',
+        'translated' => true,
+        'type' => 'textarea',
+        'maxlength' => 150
     ])
-    
-    @formField('block_editor')
+    @formField('block_editor', [
+        'blocks' => ['header', 'welcome', 'services', 'properties']
+    ])
 @stop

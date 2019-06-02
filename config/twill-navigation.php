@@ -3,11 +3,30 @@
 return [
     'properties' => [
         'title' => "Vastgoed",
-        'route' => 'admin.content.properties.index',
+        'module' => true,
+        'primary_navigation' => [
+            'overzicht' => [
+                'title' => 'Overzicht',
+                'route' => 'admin.properties.index',
+            ],
+            'propertyTypes' => [
+                'title' => 'Vastgoed types',
+                'route' => 'admin.content.propertyTypes.index',
+            ],
+            'countries' => [
+                'title' => 'Landen',
+                'route' => 'admin.content.countries.index',
+            ],
+            'cities' => [
+                'title' => 'Steden',
+                'route' => 'admin.content.cities.index',
+            ]
+            
+        ],
     ],
     'services' => [
         'title' => 'Diensten',
-        'route' => 'admin.content.services.index',
+        'module' => true,
     ],
     'pages' => [
         'title' => "Pagina's",

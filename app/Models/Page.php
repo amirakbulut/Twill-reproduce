@@ -3,15 +3,13 @@
 namespace App\Models;
 
 use A17\Twill\Models\Behaviors\HasBlocks;
-use A17\Twill\Models\Behaviors\HasMedias;
-use A17\Twill\Models\Behaviors\hasTranslation;
-use A17\Twill\Models\Behaviors\hasSlug;
+use A17\Twill\Models\Behaviors\HasTranslation;
+use A17\Twill\Models\Behaviors\HasSlug;
 use A17\Twill\Models\Model;
-use DB;
 
 class Page extends Model 
 {
-    use HasBlocks, HasMedias, hasTranslation, hasSlug;
+    use HasBlocks, HasTranslation, HasSlug;
 
     protected $fillable = [
         'published',
@@ -62,6 +60,4 @@ class Page extends Model
     //         ],
     //     ],
     // ];
-
-    
 }

@@ -5,12 +5,11 @@ namespace App\Models;
 use A17\Twill\Models\Behaviors\HasTranslation;
 use A17\Twill\Models\Behaviors\HasSlug;
 use A17\Twill\Models\Behaviors\HasMedias;
-use A17\Twill\Models\Behaviors\HasBlocks;
 use A17\Twill\Models\Model;
 
 class Property extends Model 
 {
-    use HasTranslation, HasSlug, HasMedias, HasBlocks;
+    use HasTranslation, HasSlug, HasMedias;
 
     protected $fillable = [
         'published',
@@ -71,4 +70,9 @@ class Property extends Model
             ],
         ],
     ];
+
+    public function propertyTypes()
+    {
+        return $this->belongsToMany(\App\Models\PropertyType::class);
+    }
 }

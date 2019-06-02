@@ -25,6 +25,14 @@ return [
             'button' => 'Ara'
         ]
     ],
+
+    'property_types' => [
+        '1' => 'Evler',
+        '2' => 'Daireler',
+        '3' => 'Dubleks',
+        '4' => 'Villalar',
+        '5' => 'Ofisler',
+    ]
 ]
 
 ?>

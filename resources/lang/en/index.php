@@ -27,7 +27,7 @@ return [
     'header' => [
         'location' => 'Location',
         'property_type' => [
-            'title' => 'Emlak Tipi',
+            'title' => 'Property type',
             'submenu' => [
                 'item1' => 'Homes',
                 'item2' => 'Apartments',
@@ -37,7 +37,7 @@ return [
             ]
         ],
         'property_status' => [
-            'title' => 'Durumu',
+            'title' => 'Property status',
             'submenu' => [
                 'item1' => 'For Sale',
                 'item2' => 'For Rent'
@@ -46,6 +46,12 @@ return [
         'bedrooms' => 'Bedrooms',
         'bathrooms' => 'Bathrooms',
         'search' => 'Search'
+    ],
+
+    'services' => [
+        'title' => 'Services',
+        'subtitle' => 'Our',
+        'readmore' => 'Read more'
     ],
 
     'properties' => [

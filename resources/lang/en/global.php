@@ -25,6 +25,14 @@ return [
             'button' => 'Search'
         ]
     ],
+
+    'property_types' => [
+        '1' => 'Homes',
+        '2' => 'Apartments',
+        '3' => 'Duplex',
+        '4' => 'Villas',
+        '5' => 'Offices',
+    ]
 ]
 
 ?>

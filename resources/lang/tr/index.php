@@ -42,6 +42,13 @@ return [
         'search' => 'Ara'
     ],
 
+    'services' => [
+        'title' => 'Hizmetlerimiz',
+        'subtitle' => 'Bizim',
+        'readmore' => 'Daha Fazlasi'
+    ],
+
+
     'properties' => [
         'title' => 'Emlak',
         'title_small' => 'Son',

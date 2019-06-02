@@ -5,9 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="description" content="html 5 template">
+	<meta name="description" content="{{ $page->description }}">
 	<meta name="author" content="">
-	<title>Find Houses - HTML5 Template</title>
+	<title>MDH - {{ $page->title }}</title>
 	<!-- FAVICON -->
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link rel="stylesheet" href="{{ asset('findhouses/css/jquery-ui.css') }}">

@@ -11,11 +11,10 @@
         'label' => 'Description',
         'translated' => true,
         'maxlength' => 1000,
-        'editSource' => true,
     ])
     @formField('input', [
         'name' => 'adres',
-        'label' => 'Vastgoed adres',
+        'label' => 'Locatie/Adres',
         'required' => true
     ])
     @formField('select', [
@@ -35,36 +34,17 @@
             ]
         ]
     )
-    @formField('select', [
-        'name' => 'property_type',
-        'label' => 'Vastgoed type',
-        'placeholder' => 'Kies een type',
-        'required' => true,
-        'options' => [
-                [
-                    'value' => 1,
-                    'label' => 'Woning'
-                ],
-                [
-                    'value' => 2,
-                    'label' => 'Appartement'
-                ],
-                [
-                    'value' => 3,
-                    'label' => 'Duplexwoning'
-                ],
-                [
-                    'value' => 3,
-                    'label' => 'Villa'
-                ],
-                [
-                    'value' => 3,
-                    'label' => 'Bedrijfspand'
-                ]
-                
-            ]
-        ]
-    )
+    </br>
+    <a17-fieldset title="Vastgoed type" id="related" :open="true">
+        @formField('browser', [
+            'routePrefix' => 'content',
+            'moduleName' => 'propertyTypes',
+            'name' => 'propertyTypes',
+            'label' => 'Vastgoed type',
+            'max' => 20,
+            'translated' => true
+        ])
+    </a17-fieldset>
     @formField('input', [
         'name' => 'bedrooms',
         'label' => 'Aantal slaapkamers',
@@ -116,8 +96,5 @@
         'label' => 'Vastgoed prijs',
         'type' => 'number',
         'required' => true
-    ])
-    @formField('block_editor', [
-        'blocks' => ['property_features']
     ])
 @stop
